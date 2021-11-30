@@ -1,0 +1,193 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'principal';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--cor01);
+}
+
+:root {
+    --cor01: #84E1AD;
+    --cor02: #299357;
+    --cor03: #144e25;
+    --cor04: #07351c;
+
+    --fonte-titulos: 'principal';
+}
+
+/* Formatação do cabeçalho */
+
+header {
+    text-align: center;
+    height: 240px;
+    background-image: linear-gradient(to bottom, var(--cor02), var(--cor04));
+}
+
+header > h1 {
+    font-family: 'Bebas Neue', cursiva;
+    font-size: 3em;
+    padding-top: 40px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+header > p {
+    font-size: 1.2em;
+    color: white;
+    max-width: 500px;
+    display: block;
+    margin: auto;
+}
+
+/* Formatação do menu */
+
+nav {
+    position: absolute;
+    top: 210px;
+    left: 30px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    font-weight: bold;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transition-duration: 0.3s;
+}
+
+nav > a:hover {
+    background-color: var(--cor02);
+    color: var(--cor04);
+}
+
+/* Formatação do main */
+
+main {
+    max-width: 800px;
+    min-width: 270px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.445);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 20px;
+}
+
+main > h1 {
+    padding: 20px;
+    font-family: var(--fonte-titulos);
+    color: var(--cor04);
+}
+
+main > h2 {
+    padding: 10px;
+    background-image: linear-gradient(to right, var(--cor01), white);
+    font-family: var(--fonte-titulos);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+main > p {
+    text-align: justify;
+    text-indent: 20px;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+img#bug {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+div.video {
+    background: var(--cor04);
+    margin: 30px -20px;
+    position: relative;
+    padding: 20px;
+    padding-bottom: 50%;
+}
+
+div.video > iframe {
+    position: absolute;
+    
+    width: 90%;
+    height: 90%;
+    
+}
+
+ /* Formatação do aside */
+
+aside {
+    padding: 20px;
+    background-color: var(--cor01);
+    position: relative;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.452);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 20px;
+}
+
+aside > h3 {
+    padding: -px;
+    background-color: var(--cor04);
+    color: white;
+    padding: 10px;
+    margin: -20px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > P {
+    padding: 10px;
+    text-align: justify;
+    text-indent: 20px;
+    
+}
+
+aside > p#p {
+   margin-top: 35px;
+}
+
+ul {
+    list-style: none;
+    padding: 20px;
+    columns: 2;
+}
+
+
+/* Formatação do footer */
+
+footer {
+    background-color: var(--cor03);
+    padding-inline-end: 10px;
+}
+
+footer > p {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+footer > p > a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
