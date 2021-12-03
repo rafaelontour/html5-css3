@@ -1,2 +1,54 @@
 @charset "utf8";
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: darkgray;
+    min-height: 100vh;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+header > h1 {
+    font-variant: small-caps;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.normal {
+    background-color: white;
+    color: black;
+}
+
+.imagem {
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
