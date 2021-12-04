@@ -1,4 +1,11 @@
 @charset "utf8";
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --titulo: 'Secular One', sans-serif;
+    --sections: 'Sriracha', cursive;
+}
 
 * {
     margin: 0;
@@ -8,6 +15,7 @@
 html, body {
     background-color: darkgray;
     min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
@@ -19,6 +27,8 @@ header {
 
 header > h1 {
     font-variant: small-caps;
+    font-family: var(--titulo);
+    font-size: 10vw;
 }
 
 a {
@@ -34,6 +44,10 @@ a:hover {
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
+    line-height: 2em;
+    font-size: 3.2vw;
+    padding-left: 30px;
+    font-family: var(--sections);
 }
 
 .normal {
@@ -44,6 +58,14 @@ section {
 .imagem {
     background-color: rgb(20, 20, 20);
     color: white;
+}
+
+.imagem > p {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.664);
+    transform: translateX(-20px);
 }
 
 footer {
